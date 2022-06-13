@@ -1,7 +1,8 @@
 <script>
 	// import { hsl } from 'd3-color';
 	// import { interpolateNumber } from 'd3-interpolate';
-	import { scaleLinear } from 'd3-scale';
+	// import { scaleLinear } from 'd3-scale';
+	import { scaleLinear } from 'd3';
 
 	// const c = hsl('steelblue');
 	// c.h += 90;
