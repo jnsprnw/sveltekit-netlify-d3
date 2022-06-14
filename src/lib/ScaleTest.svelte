@@ -1,7 +1,7 @@
 <script>
 	import { scaleLinear } from 'd3-scale';
 
-	let width;
+	let width = 50;
 
 	$: x = scaleLinear()
     .domain([0, 1])
