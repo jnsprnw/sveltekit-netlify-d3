@@ -1,8 +1,8 @@
 <script>
-  import ScaleTest from '$lib/ScaleTest.svelte';
+  // import ScaleTest from '$lib/ScaleTest.svelte';
   // import { hsl } from 'd3-color';
   // import { interpolateNumber } from 'd3-interpolate';
-  // import { scaleLinear } from 'd3-scale';
+  import { scaleLinear } from 'd3-scale';
   // import { scaleLinear } from 'd3';
   // import * as d3 from 'd3';
 
@@ -13,12 +13,12 @@
 
   // const i = interpolateNumber(10, 20);
 
-  // const x = d3.scaleLinear()
-  //   .domain([10, 130])
-  //   .range([0, 960]);
+  const x = scaleLinear()
+    .domain([10, 130])
+    .range([0, 960]);
 </script>
 
 <!-- <h1>{ color }</h1> -->
 <!-- <h1>{ i(0.2) }</h1> -->
-<!-- <h1>{ x(50) }</h1> -->
-<ScaleTest />
+<h1>{ x(50) }</h1>
+<!-- <ScaleTest /> -->
