@@ -3,7 +3,8 @@
   // import { interpolateNumber } from 'd3-interpolate';
   // import { scaleLinear } from 'd3-scale';
   // import { scaleLinear } from 'd3';
-  import * as d3 from 'd3'
+  // import * as d3 from 'd3';
+  import d3 from 'd3';
 
   // const c = hsl('steelblue');
   // c.h += 90;
