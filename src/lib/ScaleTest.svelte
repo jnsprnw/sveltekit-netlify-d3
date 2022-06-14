@@ -1,9 +1,11 @@
 <script>
 	import { scaleLinear } from 'd3-scale';
 
-	const x = scaleLinear()
-    .domain([10, 130])
-    .range([0, 960]);
+	let width;
+
+	$: x = scaleLinear()
+    .domain([0, 1])
+    .range([0, width]);
 </script>
 
-<h1>{ x(50) }</h1>
+<h1 bind:clientWidth={width}>{ x(0.5) }</h1>
